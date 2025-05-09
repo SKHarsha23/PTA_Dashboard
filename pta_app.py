@@ -16,7 +16,7 @@ st.set_page_config(page_title="PTAI & SEIFA Dashboard", layout="wide")
 @st.cache_data
 def load_data():
     df = pd.read_csv("sydney_sa2_pta_geom_modes.csv")
-    gdf = gpd.read_file("Assignment_Resources/SA2_2021_AUST_GDA2020.shp")
+    gdf = gpd.read_file("Assignment_Resources/sa2_sydney_simplified.geojson")
     return df, gdf
 
 pta_data_raw, suburb_shapes = load_data()
