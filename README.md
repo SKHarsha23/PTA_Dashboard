@@ -1,45 +1,45 @@
-# PTAI & SEIFA Dashboard
+# 📍 PTA & SEIFA Dashboard
 
-This repository contains all code, datasets, and resources used for the PTAI (Public Transport Accessibility Index) and SEIFA (IRSD) spatial analysis and dashboard.
+This repository contains all code, datasets, and resources used for the **PTAI** (Public Transport Accessibility Index) and **SEIFA (IRSD)** spatial analysis and interactive Streamlit dashboard.
 
-## 📍 Project Overview
+---
 
-The dashboard allows users to:
-- Select a suburb in Sydney
-- View its boundary map
-- Compare PTAI scores by transport mode vs suburb averages
-- Analyze socio-economic disadvantage (IRSD score)
-- Understand correlation between accessibility and equity
+## 🎯 Project Overview
+
+This dashboard enables users to:
+- 🔍 Select a suburb in Sydney
+- 🗺️ View its boundary on a map
+- 🚆 Compare PTAI scores by **transport mode** vs **citywide suburb averages**
+- 📊 Analyze socio-economic disadvantage (IRSD scores)
+- 🤝 Understand correlations between transport accessibility and equity
+
+---
 
 ## 📁 Files Included
 
-- `pta_app.py`: Main Streamlit dashboard code
-- `sydney_sa2_pta_geom_modes.csv`: Cleaned dataset with PTAI + IRSD
-- `gtfs_data/`: Extracted GTFS transit schedule files (e.g., stops.txt, routes.txt)
-- `SA2_2021_AUST_GDA2020.*`: Shapefile for SA2 suburb boundaries
-- `.ipynb` notebooks: Data cleaning, PTAI calculation, spatial joins, map generation
-- `.png`: Figures used in the report
-- `requirements.txt`: Python dependencies
+| File / Folder | Description |
+|---------------|-------------|
+| `pta_app.py` | Main Streamlit dashboard code |
+| `sydney_sa2_pta_geom_modes.csv` | Cleaned dataset with mode-wise PTAI + IRSD |
+| `gtfs_data/` | Extracted GTFS transit schedule files (`stops.txt`, `routes.txt`, etc.) |
+| `SA2_2021_AUST_GDA2020/` | Shapefile folder for SA2 suburb boundaries |
+| `.ipynb` notebooks | Data processing, PTAI calculations, spatial joins, map generation |
+| `.png` figures | High-quality maps and graphs used in the report |
+| `requirements.txt` | All Python package dependencies |
 
-## ▶️ How to Run
+---
 
-1. Clone the repo  
-   `git clone https://github.com/YOUR_USERNAME/PTA_Dashboard.git`
+## ⚙️ How to Run
 
-2. Navigate to the folder  
-   `cd PTA_Dashboard`
+### 📦 1. Clone the repository:
+```bash
+git clone https://github.com/SKHarsha23/PTA_Dashboard.git
 
-3. Install dependencies  
-   `pip install -r requirements.txt`
+cd PTA_Dashboard
 
-4. Run the dashboard  
-   `streamlit run pta_app.py`
+pip install -r requirements.txt
 
-## 📌 Notes
+streamlit run pta_app.py
 
-- Ensure the shapefile and GTFS data remain in the same directory structure.
-- Built using Python, Streamlit, Folium, and GeoPandas.
-
-## 🔗 License
-
-MIT License
+This project is licensed under the MIT License.
+Feel free to use, fork, and cite with attribution.
